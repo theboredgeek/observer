@@ -28,6 +28,7 @@ wireplumber
 hyprpolkitagent
 xdg-desktop-portal-hyprland
 btop
+stow
 
 
 libraries:
