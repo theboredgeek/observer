@@ -33,3 +33,4 @@ via pacman:
 - stow
 - waypaper
 - swaybg
+- yay
