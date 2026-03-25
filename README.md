@@ -5,7 +5,7 @@ dotfiles for a Hyprland setup on CachyOS
 
 - Authentication agent: hyprpolkitagent
 - terminal: kitty
-- wallpaper:
+- wallpaper: waypaper + swaybg
 - notification daemon: swaync
 - application launcher: rofi
 - file manager: yazi / dolphin (temporary)
@@ -31,8 +31,5 @@ via pacman:
 - xdg-desktop-portal-hyprland
 - btop
 - stow
-
-libraries:
-
-- qt6-wayland
-- qt5-wayland
+- waypaper
+- swaybg
