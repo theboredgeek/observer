@@ -1,6 +1,17 @@
 # observer
 dotfiles for a Hyprland setup on CachyOS
 
+For laptop:
+
+Edited logind.conf in /etc/systemd/
+
+HandleLidSwitch=suspend
+HandleLidSwitchExternalPower=ignore
+HandlePowerKey=suspend
+
+followed by sudo systemctl restart systemd-logind
+(might result in black screen. powered off and on to fix)
+
 (WIP)
 
 - Authentication agent: hyprpolkitagent
@@ -34,3 +45,5 @@ via pacman:
 - waypaper
 - swaybg
 - yay
+- hypridle
+- hyprlock
