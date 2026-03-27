@@ -1,0 +1,4 @@
+@define-color background {{colors.surface.default.rgba}};
+@define-color foreground {{colors.on_surface.default.rgba}};
+@define-color main_color {{colors.primary.default.rgba}};
+@define-color accent_color {{colors.tertiary.default.rgba}};
