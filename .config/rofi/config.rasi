@@ -21,13 +21,13 @@ configuration {
 }
 
 window {
-    width:            20%;
-    height:           7%;
+    width:            23%;
+    height:           10%;
     background-color: @bg;
     border:           2px;
     border-color:     @sel;
     border-radius:    4px;
-    padding:          20px;
+    padding:          37px;
 }
 
 /* This handles the rows themselves */
