@@ -1,0 +1,65 @@
+configuration {
+    modi: "drun,run,combi";
+    combi-modi: "drun";
+    display-combi: " 󰀻  Apps ";
+    show-icons: true;
+    icon-theme: "Adwaita";
+    terminal: "kitty";
+    drun-display-format: "{icon} {name}";
+    application-fallback-icon: "package-x-generic";
+}
+
+@import "/home/othei/.config/rofi/colors.rasi"
+
+* {
+    bg:  @background;
+    fg:  @foreground;
+    sel: @selected;
+    
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+window {
+    width:            40%;
+    background-color: @bg;
+    border:           2px;
+    border-color:     @sel;
+    border-radius:    12px;
+    padding:          15px;
+}
+
+/* This handles the rows themselves */
+element {
+    padding:          8px;
+    spacing:          10px;
+    border-radius:    6px;
+}
+
+/* FIX: This forces EVERY row to have a transparent bg and your Matugen text color */
+element normal.normal,
+element alternate.normal,
+element normal.active,
+element alternate.active {
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+/* This handles the currently highlighted row */
+element selected.normal,
+element selected.active {
+    background-color: @sel;
+    text-color:       @bg;
+}
+
+element-icon {
+    size: 25px;
+    cursor: inherit;
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color: inherit; /* This ensures it inherits the colors we set above */
+}

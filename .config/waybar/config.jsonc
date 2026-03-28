@@ -3,27 +3,27 @@
     "position": "top",
     "height": 34,
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock", "cpu", "temperature", "custom/gpu"],
+    "modules-center": ["clock"],
     "modules-right": ["tray", "pulseaudio", "bluetooth", "network", "backlight", "battery"],
 
-    "cpu": {
-        "interval": 5,
-        "format": " {usage}%",
-        "on-click": "kitty -e btop"
-    },
+    //"cpu": {
+    //    "interval": 5,
+    //    "format": " {usage}%",
+    //    "on-click": "kitty -e btop"
+    //},
 
-    "temperature": {
-        "critical-threshold": 80,
-        "format": "{icon} {temperatureC}°C",
-        "format-icons": ["", "", "", "", ""]
-    },
+   // "temperature": {
+   //     "critical-threshold": 80,
+   //     "format": "{icon} {temperatureC}°C",
+   //     "format-icons": ["", "", "", "", ""]
+   // },
 
-    "custom/gpu": {
-    "interval": 5,
-    "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,noheader,nounits | awk -F', ' '{print $1 \"%  \" $2 \"°C\"}'",
-    "format": "   {}", // Added the GPU icon here
-    "on-click": "kitty -e nvtop"
-},
+   // "custom/gpu": {
+   // "interval": 5,
+   // "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,noheader,nounits | awk -F', ' '{print $1 \"%  \" $2 \"°C\"}'",
+   // "format": "   {}", // Added the GPU icon here
+   // "on-click": "kitty -e nvtop"
+    //  },
 
 
     "hyprland/workspaces": {
