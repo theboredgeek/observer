@@ -22,7 +22,7 @@ configuration {
 
 window {
     width:            23%;
-    height:           10%;
+    height:           15%;
     background-color: @bg;
     border:           2px;
     border-color:     @sel;
