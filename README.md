@@ -1,6 +1,11 @@
 # observer
 dotfiles for a Hyprland setup on CachyOS
 
+Matugen controls the color scheme based off of wallpaper for:
+- Waybar
+- Rofi
+- more to be added in future like Kitty, hyprlock, hyprland, etc.....
+
 For laptop:
 
 Edited logind.conf in /etc/systemd/
@@ -19,10 +24,10 @@ followed by sudo systemctl restart systemd-logind
 - wallpaper: waypaper + swaybg
 - notification daemon: swaync
 - application launcher: rofi
-- file manager: yazi / dolphin (temporary)
+- file manager: yazi / dolphin
 - audio: pipewire / wireplumber
 - desktop portal: xdg-desktop-portal-hyprland
-- status bar / shell:
+- status bar / shell: waybar
 - clipboard: wl-copy
 
 Applications installed:
@@ -47,3 +52,6 @@ via pacman:
 - yay
 - hypridle
 - hyprlock
+- supergfxctl
+- power-profiles-daemon
+- matugen
