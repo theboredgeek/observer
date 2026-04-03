@@ -4,7 +4,8 @@ dotfiles for a Hyprland setup on CachyOS
 Matugen controls the color scheme based off of wallpaper for:
 - Waybar
 - Rofi
-- more to be added in future like Kitty, hyprlock, hyprland, etc.....
+- Kitty
+- more to be added in future like, hyprlock, hyprland, etc.....
 
 For laptop:
 
