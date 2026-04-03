@@ -1,20 +1,38 @@
+# --- 1. GLOBAL SETTINGS (Must be at the very top) ---
 palette = "matugen"
+add_newline = true
 
+format = """
+[┌─](low_viz)$directory$git_branch$git_status
+[└─](low_viz)$character"""
+
+# --- 2. PALETTES ---
 [palettes.matugen]
-# We define the variables here
 primary = "{{colors.primary.default.hex}}"
 secondary = "{{colors.secondary.default.hex}}"
 tertiary = "{{colors.tertiary.default.hex}}"
 error = "{{colors.error.default.hex}}"
+signal = "{{colors.primary.default.hex}}"
+warning = "{{colors.error.default.hex}}"
+low_viz = "{{colors.secondary.default.hex}}"
+
+# --- 3. MODULES ---
+[directory]
+style = "bold signal"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " 󰌾"
 
 [character]
-# We use the variable names defined in the palette above
-success_symbol = "[➜](bold primary)"
-error_symbol = "[➜](bold error)"
-
-[directory]
-style = "bold tertiary"
+success_symbol = "[❯](bold signal)"
+error_symbol = "[❯](bold warning)"
+vimcmd_symbol = "[❮](low_viz)"
 
 [git_branch]
-symbol = " "
-style = "bold secondary"
+symbol = "󰊢 "
+style = "low_viz"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "low_viz"
+format = "([$all_status$ahead_behind]($style)) "
