@@ -19,3 +19,7 @@ post_hook = 'kill -USR1 $(pgrep kitty)'
 [templates.starship]
 input_path = '~/.config/matugen/templates/starship.toml'
 output_path = '~/.config/starship.toml'
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland.conf'
+output_path = '~/.config/hypr/modules/colors.conf'

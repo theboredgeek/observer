@@ -5,7 +5,8 @@ Matugen controls the color scheme based off of wallpaper for:
 - Waybar
 - Rofi
 - Kitty
-- more to be added in future like, hyprlock, hyprland, etc.....
+- Hyprland (borders of active windows)
+- more to be added in future like, hyprlock, etc.....
 
 For laptop:
 
