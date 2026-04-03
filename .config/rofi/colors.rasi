@@ -1,7 +1,7 @@
 * {
-    background: rgba(24, 18, 11, 0.8);
-    foreground: #ede1d4;
-    selected:   #f3bd6e;
-    active:     #ddc3a1;
+    background: rgba(17, 19, 24, 0.8);
+    foreground: #e1e2e9;
+    selected:   #a5c8ff;
+    active:     #bcc7dc;
     urgent:     #ffb4ab;
 }
