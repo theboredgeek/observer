@@ -57,3 +57,10 @@ via pacman:
 - supergfxctl
 - power-profiles-daemon
 - matugen
+
+via yay:
+
+- grim
+- slurp
+- grimblast-git
+- wl-clipboard
