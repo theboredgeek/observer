@@ -10,3 +10,8 @@ post_hook = 'pkill -SIGUSR2 waybar'
 [templates.rofi]
 input_path = '~/.config/matugen/templates/rofi.rasi'
 output_path = '~/.config/rofi/colors.rasi'
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty.conf'
+output_path = '~/.config/kitty/themes/matugen-theme.conf'
+post_hook = 'kill -USR1 $(pgrep kitty)'
