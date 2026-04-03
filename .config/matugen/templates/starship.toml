@@ -1,0 +1,20 @@
+palette = "matugen"
+
+[palettes.matugen]
+# We define the variables here
+primary = "{{colors.primary.default.hex}}"
+secondary = "{{colors.secondary.default.hex}}"
+tertiary = "{{colors.tertiary.default.hex}}"
+error = "{{colors.error.default.hex}}"
+
+[character]
+# We use the variable names defined in the palette above
+success_symbol = "[➜](bold primary)"
+error_symbol = "[➜](bold error)"
+
+[directory]
+style = "bold tertiary"
+
+[git_branch]
+symbol = " "
+style = "bold secondary"

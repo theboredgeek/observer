@@ -1,7 +1,8 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 
-# overwrite greeting
-# potentially disabling fastfetch
-#function fish_greeting
-#    # smth smth
-#end
+# Initialize Starship
+starship init fish | source
+
+# Overwrite greeting (cleans up the terminal start)
+function fish_greeting
+end
