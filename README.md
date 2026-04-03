@@ -22,7 +22,7 @@ followed by sudo systemctl restart systemd-logind
 (WIP)
 
 - Authentication agent: hyprpolkitagent
-- terminal: kitty
+- terminal: kitty + starship
 - wallpaper: waypaper + swaybg
 - notification daemon: swaync
 - application launcher: rofi
