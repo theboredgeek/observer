@@ -7,6 +7,7 @@ configuration {
     terminal: "kitty";
     drun-display-format: "{icon} {name}";
     application-fallback-icon: "package-x-generic";
+    font: "ZedMono Nerd Font 13";
 }
 
 @import "/home/othei/.config/rofi/colors.rasi"
@@ -24,9 +25,10 @@ window {
     width:            23%;
     height:           15%;
     background-color: @bg;
+    /* Industrial Sharp Edges */
     border:           2px;
     border-color:     @sel;
-    border-radius:    4px;
+    border-radius:    2px; /* Sharp corners to match your terminal */
     padding:          37px;
 }
 
@@ -34,7 +36,8 @@ window {
 element {
     padding:          8px;
     spacing:          10px;
-    border-radius:    6px;
+    /* Matches the window sharpness */
+    border-radius:    2px; 
 }
 
 /* FIX: This forces EVERY row to have a transparent bg and your Matugen text color */
@@ -51,10 +54,13 @@ element selected.normal,
 element selected.active {
     background-color: @sel;
     text-color:       @bg;
+    /* Optional: adds a small 'tab' effect on the left */
+    border:           0px 0px 0px 4px;
+    border-color:     @fg;
 }
 
 element-icon {
-    size: 25px;
+    size: 20px;
     cursor: inherit;
     background-color: transparent;
     text-color: inherit;
