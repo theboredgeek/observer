@@ -68,13 +68,13 @@
     background: alpha(@background, 0.95); 
     border-radius: 0px;
     border-color: @selected;
-    box-shadow: 0 0 8px alpha(@selected, 0.4); 
+    box-shadow: 0 0 8px alpha(@selected, 0.8); 
 }
 
 /* --- Main Control Center Sidebar --- */
 
 .control-center {
-    background: alpha(@background, 1.0);
+    background: alpha(@background, 1.1);
     border-radius: 0px; 
     border: 1px solid @selected;
     margin: 10px;
