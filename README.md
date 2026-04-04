@@ -67,3 +67,4 @@ via yay:
 - grimblast-git
 - wl-clipboard
 - openmeters-git
+- pacsea for easy package management
