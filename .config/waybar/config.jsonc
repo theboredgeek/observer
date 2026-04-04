@@ -27,13 +27,13 @@
 
     "battery": {
         "states": { "critical": 15 },
-        "format": "{icon} {capacity}%",
+        "format": "{icon}  {capacity}%",
         "format-icons": ["", "", "", "", ""],
         "on-click": "gnome-power-statistics"
     },
 
     "network": {
-        "format-wifi": " {essid}",
+        "format-wifi": "  {essid}",
         "format-disconnected": "   Disconnected",
         "on-click": "kitty -e nmtui"
     },
@@ -44,7 +44,7 @@
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}  {volume}%",
         "format-muted": "   Muted",
         "format-icons": ["", "", ""],
         "on-click": "pavucontrol"
@@ -52,7 +52,7 @@
 
     "backlight": {
         "device": "intel_backlight", 
-        "format": "{icon} {percent}%",
+        "format": "{icon}  {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-scroll-up": "brightnessctl set 1%+",
         "on-scroll-down": "brightnessctl set 1%-",
