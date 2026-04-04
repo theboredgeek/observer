@@ -6,7 +6,8 @@ Matugen controls the color scheme based off of wallpaper for:
 - Rofi
 - Kitty
 - Hyprland (borders of active windows)
-- more to be added in future like, hyprlock, etc.....
+- Swaync
+- more to be added in future like hyprlock, etc.....
 
 For laptop:
 
@@ -57,6 +58,7 @@ via pacman:
 - supergfxctl
 - power-profiles-daemon
 - matugen
+- starship
 
 via yay:
 
