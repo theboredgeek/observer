@@ -66,3 +66,4 @@ via yay:
 - slurp
 - grimblast-git
 - wl-clipboard
+- openmeters-git
