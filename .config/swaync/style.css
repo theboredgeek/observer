@@ -1,0 +1,117 @@
+@import url("colors.css");
+
+/* Global Font - Use a Monospace font for that 'terminal' feel */
+* {
+    font-family: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", monospace;
+    font-size: 13px;
+}
+
+/* --- Notification Popups (Floating) --- */
+
+.notification-row {
+    background: transparent;
+    outline: none;
+    margin: 4px 0px;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+    background: transparent;
+    border-radius: 0px;
+}
+
+.notification {
+    background: transparent;
+    border-radius: 0px;
+    padding: 0px;
+    box-shadow: none;
+}
+
+/* The clickable button area that usually causes the 'pill' shape */
+.notification-default-action,
+.notification-action {
+    padding: 0;
+    margin: 0;
+    border-radius: 0px;
+    background: transparent;
+    border: none;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    background: alpha(@selected, 0.05);
+    border-radius: 0px;
+}
+
+.notification-content {
+    background: @background;
+    color: @foreground;
+    padding: 12px;
+    border-radius: 0px; /* SHARP CORNERS */
+    border-left: 4px solid @selected; /* Thick accent 'status' bar on the left */
+    border-top: 1px solid alpha(@selected, 0.3);
+    border-right: 1px solid alpha(@selected, 0.3);
+    border-bottom: 1px solid alpha(@selected, 0.3);
+    box-shadow: 0 0 5px alpha(@selected, 0.3);
+}
+
+/* Target the hover state of the entire notification row */
+.notification:hover {
+    background: alpha(@selected, 0.1); 
+    border-radius: 0px; 
+    box-shadow: none;
+    transition: background 0.15s ease-in-out;
+}
+
+/* Ensure the inner content stays sharp during hover */
+.notification-content:hover {
+    background: alpha(@background, 0.95); 
+    border-radius: 0px;
+    border-color: @selected;
+    box-shadow: 0 0 8px alpha(@selected, 0.4); 
+}
+
+/* --- Main Control Center Sidebar --- */
+
+.control-center {
+    background: alpha(@background, 1.0);
+    border-radius: 0px; 
+    border: 1px solid @selected;
+    margin: 10px;
+    padding: 15px;
+}
+
+/* Title bar of the sidebar */
+.widget-title {
+    color: @selected;
+    font-weight: 800;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Industrial Buttons */
+.widget-title > button {
+    background: alpha(@accent, 0.2);
+    color: @foreground;
+    border: 1px solid @accent;
+    border-radius: 0px;
+    padding: 4px 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.widget-title > button:hover {
+    background: @selected;
+    color: @background;
+    box-shadow: 0 0 10px @selected; 
+}
+
+/* Progress bars */
+progressbar, progress {
+    background-color: alpha(@foreground, 0.1);
+    border-radius: 0px;
+}
+
+progress {
+    background-color: @selected;
+}
