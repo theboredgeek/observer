@@ -59,6 +59,7 @@ via pacman:
 - power-profiles-daemon
 - matugen
 - starship
+- solaar
 
 via yay:
 
