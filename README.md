@@ -1,7 +1,9 @@
 # observer
+
 dotfiles for a Hyprland setup on CachyOS
 
 Matugen controls the color scheme based off of wallpaper for:
+
 - Waybar
 - Rofi
 - Kitty
@@ -69,3 +71,8 @@ via yay:
 - wl-clipboard
 - openmeters-git
 - pacsea for easy package management
+
+Fonts:
+
+- ZedMono Nerd Font
+
