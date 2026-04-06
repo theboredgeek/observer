@@ -1,5 +1,5 @@
-@define-color background alpha(#121318, 0.8);
-@define-color foreground #e3e2e9;
-@define-color selected #b4c5ff;
-@define-color accent #324478;
+@define-color background alpha(#111318, 0.8);
+@define-color foreground #e2e2e9;
+@define-color selected #adc6ff;
+@define-color accent #2b4678;
 @define-color error #ffb4ab;
