@@ -10,7 +10,7 @@
         "exec": "supergfxctl -g",
         "interval": 30,
         "format": "󰢮  {}",
-        "on-click": "bash -c '[ \"$(supergfxctl -g)\" = \"Integrated\" ] && supergfxctl -m Hybrid || supergfxctl -m Integrated'",
+       // "on-click": "bash -c '[ \"$(supergfxctl -g)\" = \"Integrated\" ] && supergfxctl -m Hybrid || supergfxctl -m Integrated'",
         "signal": 10
     },
 
