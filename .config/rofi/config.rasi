@@ -22,14 +22,14 @@ configuration {
 }
 
 window {
-    width:            23%;
-    height:           15%;
+    width:            28%;
+    height:           30%;
     background-color: @bg;
     /* Industrial Sharp Edges */
     border:           2px;
     border-color:     @sel;
-    border-radius:    2px; /* Sharp corners to match your terminal */
-    padding:          37px;
+    border-radius:    0px; /* Sharp corners to match your terminal */
+    padding:          20px;
 }
 
 /* This handles the rows themselves */
