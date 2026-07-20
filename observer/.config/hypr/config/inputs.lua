@@ -4,6 +4,12 @@ hl.config({
     input = {
         -- sensitivity = -0.25,
         accel_profile = "flat",
+        
+        -- Touchpad configuration for natural scrolling
+        touchpad = {
+            natural_scroll = true,
+            tap_to_click = true, -- Optional: Enables tap-to-click if you want it
+        },
     },
     -- Uncomment the section below to enable software cursors; this can help with cursor display or behavior issues
     -- cursor = {
