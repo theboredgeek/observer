@@ -33,7 +33,7 @@ hl.config({
         dim_special = 0.3,
         rounding = 6,
         active_opacity = 0.95,
-        inactive_opacity = 0.85,
+        inactive_opacity = 0.80,
         fullscreen_opacity = 1,
         blur = {
             size = 6,
