@@ -1,14 +1,13 @@
 local hostname = io.popen("uname -n"):read("*l")
 
--- Set the target monitor variable based on the machine
-local target_monitor
-if hostname == "blade03" then
-    target_monitor = "eDP-1"
+if hostname == "your-laptop-hostname" then
+    -- Laptop: Completely remove monitor bindings so workspaces pool on eDP-1 naturally
+    hl.workspace_rule({ workspace = "1", default = true, persistent = true })
+    hl.workspace_rule({ workspace = "2", persistent = true })
+    hl.workspace_rule({ workspace = "3", persistent = true })
 else
-    target_monitor = "DP-1" -- Matches your desktop MONITOR1
+    -- Desktop: Keep your multi-monitor hardware locks
+    hl.workspace_rule({ workspace = "1", monitor = MONITOR1, default = true, persistent = true })
+    hl.workspace_rule({ workspace = "2", monitor = MONITOR1, default = true, persistent = true })
+    hl.workspace_rule({ workspace = "3", monitor = MONITOR1, default = true, persistent = true })
 end
-
--- Apply the rules using the dynamic monitor variable
-hl.workspace_rule({ workspace = "1", monitor = target_monitor, default = true, persistent = true })
-hl.workspace_rule({ workspace = "2", monitor = target_monitor, default = true, persistent = true })
-hl.workspace_rule({ workspace = "3", monitor = target_monitor, default = true, persistent = true })
