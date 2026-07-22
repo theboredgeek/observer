@@ -1,9 +1,13 @@
--- Workspace rules wiki https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
--- Add your workspace rules here. Increment the workspace number as you go. Do not have duplicate workspaces.
--- hl.workspace_rule({ workspace = "name:gaming", monitor = PRIMARY_MONITOR, default = true })
-hl.workspace_rule({ workspace = "1", monitor = MONITOR1, default = true, persistent = true })
-hl.workspace_rule({ workspace = "2", monitor = MONITOR1, default = true, persistent = true })
-hl.workspace_rule({ workspace = "3", monitor = MONITOR1, default = true, persistent = true })
--- hl.workspace_rule({ workspace = "4", monitor = MONITOR2, default = true, persistent = true })
--- hl.workspace_rule({ workspace = "5", monitor = MONITOR2, default = true, persistent = true })
--- hl.workspace_rule({ workspace = "6", monitor = MONITOR2, default = true, persistent = true })
+local hostname = io.popen("uname -n"):read("*l")
+
+if hostname == "blade03" then
+    -- Laptop: Unbind specific monitors so workspaces pool naturally on eDP-1
+    hl.workspace_rule({ workspace = "1", default = true, persistent = true })
+    hl.workspace_rule({ workspace = "2", persistent = true })
+    hl.workspace_rule({ workspace = "3", persistent = true })
+else
+    -- Desktop: Keep your multi-monitor bindings using MONITOR1
+    hl.workspace_rule({ workspace = "1", monitor = MONITOR1, default = true, persistent = true })
+    hl.workspace_rule({ workspace = "2", monitor = MONITOR1, default = true, persistent = true })
+    hl.workspace_rule({ workspace = "3", monitor = MONITOR1, default = true, persistent = true })
+end
