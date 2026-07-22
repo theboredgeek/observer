@@ -2,7 +2,7 @@
 
 -- Universal Application Defaults
 TERMINAL = "kitty"
-FILE_MANAGER = "thunar"
+FILE_MANAGER = "dolphin"
 EDITOR = "nvim"
 BROWSER = "firefox"
 NUM_WPM = 5
