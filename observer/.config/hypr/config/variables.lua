@@ -21,8 +21,8 @@ if hostname == "blade03" then
 else
     -- Desktop configuration: Targets are monitors
     MONITOR1 = "DP-1"     -- Adjust to your primary desktop monitor name if needed
-    MONITOR2 = "DP-1"
-    MONITOR3 = "DP-1"
+    MONITOR2 = "DP-2"
+    MONITOR3 = "DP-3"
     TARGET_1 = { monitor = MONITOR1 }
     TARGET_2 = { monitor = MONITOR2 }
     TARGET_3 = { monitor = MONITOR3 }
