@@ -9,7 +9,7 @@ CALCULATOR   = "gnome-calculator"
 -- Monitors
 local hostname = io.popen("uname -n"):read("*l")
 
-if hostname == "your-laptop-hostname" then
+if hostname == "blade03" then
     -- Fallback variables for your laptop so global references don't crash
     MONITOR1 = "eDP-1"
     MONITOR2 = "eDP-1"
