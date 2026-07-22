@@ -104,13 +104,17 @@ hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-cen
 ---- WORKSPACES & MONITORS ----
 -------------------------------
 
--- Focus on monitors
-hl.bind(mainMod .. " + 1", hl.dsp.focus({ monitor = MONITOR1 }))
-hl.bind(mainMod .. " + 2", hl.dsp.focus({ monitor = MONITOR2 }))
-hl.bind(mainMod .. " + 3", hl.dsp.focus({ monitor = MONITOR3 }))
+-- Focus on targets (Monitors on Desktop, Workspaces on Laptop)
+hl.bind(mainMod .. " + 1", hl.dsp.focus(TARGET_1))
+hl.bind(mainMod .. " + 2", hl.dsp.focus(TARGET_2))
+hl.bind(mainMod .. " + 3", hl.dsp.focus(TARGET_3))
 
--- Focus on workspace number
--- Absolute
+-- Move window to targets
+hl.bind(mainMod .. " + SHIFT + 1", hl.dsp.window.move(TARGET_1))
+hl.bind(mainMod .. " + SHIFT + 2", hl.dsp.window.move(TARGET_2))
+hl.bind(mainMod .. " + SHIFT + 3", hl.dsp.window.move(TARGET_3))
+
+-- Focus on workspace number (Absolute)
 for i = 1, NUM_WPM do
     local key = i % 10
     hl.bind(mainMod .. " + TAB + " .. key, hl.dsp.focus({ workspace = i }))
@@ -127,10 +131,10 @@ hl.bind(mainMod .. " + CONTROL + Left",        hl.dsp.focus({ workspace = "m-1" 
 hl.bind(mainMod .. " + CONTROL + Down",        hl.dsp.focus({ workspace = "emptym" }))
 
 -- Scroll through existing workspaces & monitors
-hl.bind(mainMod .. " + mouse_down",           hl.dsp.focus({ workspace = "m+1" }))
-hl.bind(mainMod .. " + mouse_up",             hl.dsp.focus({ workspace = "m-1" }))
-hl.bind(mainMod .. " + CONTROL + mouse_up",   hl.dsp.focus({ workspace = "m+1" }))
-hl.bind(mainMod .. " + CONTROL + mouse_down", hl.dsp.focus({ workspace = "m-1" }))
+hl.bind(mainMod .. " + mouse_down",            hl.dsp.focus({ workspace = "m+1" }))
+hl.bind(mainMod .. " + mouse_up",              hl.dsp.focus({ workspace = "m-1" }))
+hl.bind(mainMod .. " + CONTROL + mouse_up",    hl.dsp.focus({ workspace = "m+1" }))
+hl.bind(mainMod .. " + CONTROL + mouse_down",  hl.dsp.focus({ workspace = "m-1" }))
 
 -- Special workspace (scratchpad)
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special" }))
