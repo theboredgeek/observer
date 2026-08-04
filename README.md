@@ -10,3 +10,4 @@ Slight visual changes after installing the default Hyprland Noctalia configs fro
 - Editor: Neovim (Minimal setup)
 - Wallpapers: Stored in /Pictures/Wallpapers. (Wallpapers were sourced form a few github repos created by others)
 
+What you see in the main screen shot is 3 Kitty terminals. Left: Python interpreter. Right: Neovim. Center floating window: Yazi file browser.
