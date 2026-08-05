@@ -25,4 +25,5 @@ The second screenshot is Neovim in fullscreen editing this markdown file.
         - Lua
         - Markdown
     - Plus a couple git packages
-- Wallpapers: Stored in /Pictures/Wallpapers. (Wallpapers were sourced form a few github repos created by others)
+- Wallpapers: Stored in /Pictures/Wallpapers.
+    - Wallpapers were sourced from a few github repos created by others.
