@@ -8,10 +8,11 @@ Slight visual changes after installing the default Hyprland Noctalia configs fro
 Otherwise a few config tweaks for monitor setups so I can use the same dotfiles on a laptop and a 4 monitor desktop.
 As well as a couple keybind and window rule changes in hypr/config.
 
-What you see in the screen shot is 3 Kitty terminals.
+What you see in the first screenshot is 3 Kitty terminals.
     - Left: Python interpreter
     - Right: Neovim
     - Center floating window: Yazi file browser.
+The second screenshot is Neovim in fullscreen editing this markdown file.
 
 - Window Manager: Hyprland + Noctalia
 - Shell: Fish
