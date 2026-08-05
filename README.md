@@ -2,6 +2,7 @@
 Minimal Hyprland+Noctalia Rice Tweaks
 
 ![My Desktop](./screenshots/observer_8_4_2026)
+![My Desktop](./screenshots/observer_readme_neovim_fullscreen_8_4_20266)
 
 Slight visual changes after installing the default Hyprland Noctalia configs from CachyOS. Such as a brushed glass aesthetic with shadows.
 Otherwise a few config tweaks for monitor setups so I can use the same dotfiles on a laptop and a 4 monitor desktop.
