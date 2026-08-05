@@ -2,7 +2,7 @@
 Minimal Hyprland+Noctalia Rice Tweaks
 
 ![My Desktop](./screenshots/observer_8_4_2026)
-![My Desktop](./screenshots/observer_readme_neovim_fullscreen_8_4_20266)
+![My Desktop](./screenshots/)
 
 Noctalia still does most of the heavy lifting. This "Rice" isn't anything special. Just minor aesthetic changes, and storing my configs for a few packages.
 
