@@ -1,6 +1,6 @@
 local hostname = io.popen("uname -n"):read("*l")
 
-if hostname == "YOUR_LAPTOP_HOSTNAME" then
+if hostname == "blade03" then
     -- Laptop: Pool workspaces naturally on the laptop display
     hl.workspace_rule({ workspace = "1", default = true, persistent = true })
     hl.workspace_rule({ workspace = "2", persistent = true })
