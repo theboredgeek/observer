@@ -8,7 +8,7 @@ Minimal Hyprland+Noctalia Rice Tweaks
     - Center floating window: Yazi file browser.
 
 ![My Desktop](./screenshots/observer_readme_neovim_fullscreen_8_4_20266)
-- The second screenshot is Neovim in fullscreen editing this markdown file.
+- Neovim, editing this markdown file, fullscreen.
 
 ![My Desktop](./screenshots/observer_neovim_split_view)
 - Neovim in split view with an active terminal, testing the open Python file.
