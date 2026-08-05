@@ -39,6 +39,31 @@ map("n", "<C-j>", "<C-w>j")
 map("n", "<C-k>", "<C-w>k")
 map("n", "<C-l>", "<C-w>l")
 
+-- Same window navigation, but from inside terminal-mode (e.g. the REPL)
+map("t", "<C-h>", "<C-\\><C-n><C-w>h")
+map("t", "<C-j>", "<C-\\><C-n><C-w>j")
+map("t", "<C-k>", "<C-\\><C-n><C-w>k")
+map("t", "<C-l>", "<C-\\><C-n><C-w>l")
+
+-- Escape terminal-mode without the <C-\><C-n> chord
+map("t", "<Esc>", "<C-\\><C-n>")
+
+-- Open a Python REPL in a vertical split (shell-backed, so it survives exits)
+map("n", "<leader>rp", function()
+  vim.cmd("vsplit | terminal")
+  vim.cmd("startinsert")
+  vim.api.nvim_chan_send(vim.b.terminal_job_id, "python3\n")
+end, { desc = "Open Python REPL split" })
+
+-- Run the current file in a vertical split (shell-backed, so up-arrow/history work)
+map("n", "<leader>rr", function()
+  local filepath = vim.fn.expand("%:p")  -- capture BEFORE switching buffers
+  vim.cmd("write")
+  vim.cmd("vsplit | terminal")
+  vim.cmd("startinsert")
+  vim.api.nvim_chan_send(vim.b.terminal_job_id, "python3 " .. filepath .. "\n")
+end, { desc = "Run current file in shell REPL split" })
+
 -- Better indenting behavior in visual mode (keeps selection active)
 map("v", "<", "<gv")
 map("v", ">", ">gv")

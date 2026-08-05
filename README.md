@@ -25,6 +25,7 @@ As well as a couple keybind and window rule changes in hypr/config. Kitty cursor
         - Lua
         - Markdown
     - Plus a couple git packages
+    - Built-in code/terminal split view for testing python code quickly without leaving Neovim. (Keybind for open file: Space+r+r. Navigate between terminal and code panes with Ctl+h and Ctl+l, i to type in terminal, Esc to leave terminals "insert mode".)
 - Wallpapers: Stored in /Pictures/Wallpapers.
     - Wallpapers were sourced from a few github repos created by others.
 
