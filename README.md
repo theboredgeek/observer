@@ -33,7 +33,7 @@ As well as a couple keybind and window rule changes in hypr/config. Kitty cursor
 - Wallpapers: Stored in /Pictures/Wallpapers.
     - Wallpapers were sourced from a few github repos created by others.
 
-# If you want to use my dotfiles for your setup -
+# If you want to use my dotfiles for your setup:
 - The first thing you'll want to change are the Hypr lua files. Specifically the following:
     - binds.lua
         - Make sure your preferred keybinds are how you like them. (obviously)
