@@ -37,6 +37,15 @@ As well as a couple keybind and window rule changes in hypr/config. Kitty cursor
 - The first thing you'll want to change are the Hypr lua files. Specifically the following:
     - binds.lua
         - Make sure your preferred keybinds are how you like them. (obviously)
+        - Basic keybinds to navigate:
+            - Terminal: Super+Space
+            - App launcher: Super+a
+            - Float window toggle: Super+Alt+Space
+            - Fullscreen toggle: Super+f
+            - Hide all but the active app toggle: Super+d
+            - Close app: Super+c
+            - Lock screen: Super+l
+
     - environment.lua
         - If you use an AMD GPU, you'll probably want to uncomment a few lines.
     - monitors.lua
