@@ -20,6 +20,7 @@ opt.termguicolors = true       -- Enable 24-bit RGB colors
 opt.scrolloff = 8              -- Keep 8 lines visible above/below cursor
 opt.clipboard = "unnamedplus"  -- Use system clipboard for copy/paste
 opt.undofile = true            -- Save undo history to disk across sessions
+opt.signcolumn = "yes:2"  -- Reserve space for up to 2 signs side-by-side
 vim.cmd([[set statuscolumn=%s%=%l\ \ ]])
 
 
@@ -73,3 +74,37 @@ for _, group in ipairs(groups) do
   vim.api.nvim_set_hl(0, group, { bg = "NONE", ctermbg = "NONE" })
 end
 
+-- ========================================================================== --
+-- 5. PLUGINS (native vim.pack)
+-- ========================================================================== --
+vim.pack.add({
+  { src = "https://github.com/windwp/nvim-autopairs" },
+  { src = "https://github.com/saghen/blink.cmp", version = vim.version.range("^1") },
+  { src = "https://github.com/mason-org/mason.nvim" },
+  { src = "https://github.com/neovim/nvim-lspconfig" },
+})
+
+-- Auto-pairs
+require("nvim-autopairs").setup({})
+
+-- Completion popup
+require("blink.cmp").setup({
+  keymap = { preset = "super-tab" },
+  completion = { documentation = { auto_show = true } },
+  sources = { default = { "lsp", "path", "snippets", "buffer" } },
+  fuzzy = { implementation = "prefer_rust_with_warning" },
+})
+
+-- Mason: manages installed LSPs/linters/formatters
+require("mason").setup()
+
+-- Python LSP, wired to advertise blink.cmp's capabilities
+vim.lsp.config.pyright = {
+  capabilities = require("blink.cmp").get_lsp_capabilities(),
+}
+vim.lsp.enable("pyright")
+
+vim.lsp.config.ruff = {
+  capabilities = require("blink.cmp").get_lsp_capabilities(),
+}
+vim.lsp.enable("ruff")
