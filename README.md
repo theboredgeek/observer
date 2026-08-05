@@ -1,4 +1,5 @@
-# Minimal Hyprland Noctalia Rice Tweaks
+# Observer Dotfiles
+Minimal Hyprland Noctalia Rice Tweaks
 
 ![My Desktop](./screenshots/observer_8_4_2026)
 
