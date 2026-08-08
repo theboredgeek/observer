@@ -1,6 +1,6 @@
 local mainMod = "SUPER"
 local noctCall = "noctalia msg "
-local launchPrefix = "uwsm app -- " -- if you are not using UWSM, make this empty (e.g. "")
+local launchPrefix = "" -- if you are not using UWSM, make this empty (e.g. "")
 
 ---------------------------
 ---- WINDOW MANAGEMENT ----
@@ -108,11 +108,17 @@ hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-cen
 hl.bind(mainMod .. " + 1", hl.dsp.focus(TARGET_1))
 hl.bind(mainMod .. " + 2", hl.dsp.focus(TARGET_2))
 hl.bind(mainMod .. " + 3", hl.dsp.focus(TARGET_3))
+hl.bind(mainMod .. " + 4", hl.dsp.focus(TARGET_4))
+hl.bind(mainMod .. " + 5", hl.dsp.focus(TARGET_5))
+hl.bind(mainMod .. " + 6", hl.dsp.focus(TARGET_6))
 
 -- Move window to targets
 hl.bind(mainMod .. " + SHIFT + 1", hl.dsp.window.move(TARGET_1))
 hl.bind(mainMod .. " + SHIFT + 2", hl.dsp.window.move(TARGET_2))
 hl.bind(mainMod .. " + SHIFT + 3", hl.dsp.window.move(TARGET_3))
+hl.bind(mainMod .. " + SHIFT + 4", hl.dsp.window.move(TARGET_4))
+hl.bind(mainMod .. " + SHIFT + 5", hl.dsp.window.move(TARGET_5))
+hl.bind(mainMod .. " + SHIFT + 6", hl.dsp.window.move(TARGET_6))
 
 -- Focus on workspace number (Absolute)
 for i = 1, NUM_WPM do

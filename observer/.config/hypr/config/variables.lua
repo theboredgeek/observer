@@ -16,10 +16,14 @@ if hostname == "blade03" then
     MONITOR2 = "eDP-1"
     MONITOR3 = "eDP-1"
     MONITOR4 = "eDP-1"
+    MONITOR5 = "eDP-1"
+    MONITOR6 = "eDP-1"
     TARGET_1 = { workspace = "1" }
     TARGET_2 = { workspace = "2" }
     TARGET_3 = { workspace = "3" }
     TARGET_4 = { workspace = "4" }
+    TARGET_5 = { workspace = "5" }
+    TARGET_6 = { workspace = "6" }
 else
     -- Desktop configuration: Targets are monitors
     MONITOR1 = "HDMI-A-1"     -- Adjust to your primary desktop monitor name if needed

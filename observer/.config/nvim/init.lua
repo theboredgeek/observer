@@ -3,7 +3,6 @@
 -- ========================================================================== --
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-vim.g.python3_host_prog = '/usr/bin/pynvim-python'
 
 local opt = vim.opt
 opt.number = true              -- Show absolute line numbers
@@ -124,12 +123,15 @@ require("blink.cmp").setup({
 require("mason").setup()
 
 -- Python LSP, wired to advertise blink.cmp's capabilities
-vim.lsp.config.pyright = {
+vim.lsp.config('pyright', {
   capabilities = require("blink.cmp").get_lsp_capabilities(),
-}
+})
 vim.lsp.enable("pyright")
 
 vim.lsp.config.ruff = {
   capabilities = require("blink.cmp").get_lsp_capabilities(),
 }
 vim.lsp.enable("ruff")
+
+local ok, matugen = pcall(require, 'matugen')
+if ok then matugen.setup() end

@@ -5,6 +5,9 @@ if hostname == "blade03" then
     hl.workspace_rule({ workspace = "1", default = true, persistent = true })
     hl.workspace_rule({ workspace = "2", persistent = true })
     hl.workspace_rule({ workspace = "3", persistent = true })
+    hl.workspace_rule({ workspace = "4", persistent = true })
+    hl.workspace_rule({ workspace = "5", persistent = true })
+    hl.workspace_rule({ workspace = "6", persistent = true })
 else
     -- Desktop: Multi-monitor hardware locks using the variables defined above
     hl.workspace_rule({ workspace = "1", monitor = MONITOR1, default = true, persistent = true })
