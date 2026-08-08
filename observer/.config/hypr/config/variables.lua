@@ -34,4 +34,6 @@ else
     TARGET_2 = { monitor = MONITOR2 }
     TARGET_3 = { monitor = MONITOR3 }
     TARGET_4 = { monitor = MONITOR4 }
+    TARGET_5 = { monitor = MONITOR1 }
+    TARGET_6 = { monitor = MONITOR2 }
 end
